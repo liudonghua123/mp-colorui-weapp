@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
 import React, { Component } from "react"
-
+import "mp-colorui/dist/style/index.scss";
 import "./app.scss";
 
 class App extends Component {
