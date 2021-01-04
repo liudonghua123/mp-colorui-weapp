@@ -1,9 +1,9 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { ClCard, ClFlex, ClLayout, ClTitleBar } from "mp-colorui";
 import { View } from "@tarojs/components";
-import "mp-colorui/src/style/category/text.scss";
-import "mp-colorui/src/style/category/layout.scss";
-import "mp-colorui/src/style/category/bgColor.scss";
+import "mp-colorui/dist/style/category/text.scss";
+import "mp-colorui/dist/style/category/layout.scss";
+import "mp-colorui/dist/style/category/bgColor.scss";
 
 const size = ["xs", "sm", "df", "lg", "xl"];
 
@@ -100,6 +100,3 @@ export default function Flex() {
   );
 }
 
-Flex.config = {
-  navigationBarTitleText: "Flex 弹性布局"
-};

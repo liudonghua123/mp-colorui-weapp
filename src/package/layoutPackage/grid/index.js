@@ -1,7 +1,7 @@
-import Taro from "@tarojs/taro";
+import React, { Component } from 'react'
 import { ClCard, ClGrid, ClLayout, ClTitleBar } from "mp-colorui";
 import { View } from "@tarojs/components";
-import "mp-colorui/src/style/category/bgColor.scss";
+import "mp-colorui/dist/style/category/bgColor.scss";
 
 const generatorArr = num => {
   let i = 0;
@@ -13,11 +13,7 @@ const generatorArr = num => {
   return arr;
 };
 
-export default class Grid extends Taro.Component {
-  config = {
-    navigationBarTitleText: "Grid 栅格布局"
-  };
-
+export default class Grid extends Component {
   renderComponent(num) {
     return generatorArr(num).map((un, index) => (
       <View key={Math.random()}>

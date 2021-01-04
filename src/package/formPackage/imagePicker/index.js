@@ -1,4 +1,5 @@
-import Taro, { useState } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { useState } from "react";
 import {
   ClCard,
   ClImagePicker,
@@ -87,6 +88,3 @@ export default function ImagePicker() {
   );
 }
 
-ImagePicker.config = {
-  navigationBarTitleText: "ImagePicker 图片选择器"
-};

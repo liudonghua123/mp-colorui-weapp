@@ -1,4 +1,5 @@
-import Taro, { useState } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { useState } from "react";
 import {
   ClLayout,
   ClTitleBar,
@@ -149,7 +150,3 @@ export default function Message() {
     </ClLayout>
   );
 }
-
-Message.config = {
-  navigationBarTitleText: "Message 提示消息"
-};

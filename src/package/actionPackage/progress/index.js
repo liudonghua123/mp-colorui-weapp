@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { ClCard, ClLayout, ClProgress, ClTitleBar } from "mp-colorui";
 
 export default function Progress() {
@@ -87,6 +87,3 @@ export default function Progress() {
   );
 }
 
-Progress.config = {
-  navigationBarTitleText: "Progress 进度条"
-};

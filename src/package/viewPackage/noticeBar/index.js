@@ -1,4 +1,5 @@
 import Taro from "@tarojs/taro";
+import React from "react";
 import { View } from "@tarojs/components";
 import { ClLayout, ClNoticeBar, ClTitleBar } from "mp-colorui";
 
@@ -69,6 +70,3 @@ export default function NoticeBar() {
   );
 }
 
-NoticeBar.config = {
-  navigationBarTitleText: "NoticeBar 通告栏"
-};

@@ -1,4 +1,5 @@
-import Taro, { useState, useEffect } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { useEffect, useState } from "react";
 import { ClCard, ClLayout, ClTimeline, ClLoading } from "mp-colorui";
 
 export default function Update() {
@@ -60,7 +61,3 @@ export default function Update() {
     </ClCard>
   );
 }
-
-Update.config = {
-  navigationBarTitleText: "更新日志"
-};

@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { ClLayout, ClMenuList, ClTitleBar } from "mp-colorui";
 
 const typeMenu = [
@@ -64,6 +64,3 @@ export default function MenuList() {
   );
 }
 
-MenuList.config = {
-  navigationBarTitleText: "MenuList 菜单列表"
-};

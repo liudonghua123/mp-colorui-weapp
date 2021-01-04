@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { ClCard, ClCheckbox, ClLayout, ClTitleBar } from "mp-colorui";
 
 const checkboxGroup = [
@@ -91,6 +91,3 @@ export default function Checkbox() {
   );
 }
 
-Checkbox.config = {
-  navigationBarTitleText: "Checkbox 多选按钮"
-};

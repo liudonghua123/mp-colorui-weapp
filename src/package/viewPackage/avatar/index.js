@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React, { Component } from 'react'
 import { ClAvatar, ClCard, ClFlex, ClLayout, ClTitleBar } from "mp-colorui";
 
 const headerArray = [
@@ -20,10 +20,7 @@ const headerArray = [
   }
 ];
 
-export default class Avatar extends Taro.Component {
-  config = {
-    navigationBarTitleText: "Avatar 头像"
-  };
+export default class Avatar extends Component {
 
   render() {
     return (

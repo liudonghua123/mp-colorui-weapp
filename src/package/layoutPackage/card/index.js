@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { ClCard, ClLayout, ClText, ClTitleBar } from "mp-colorui";
 
 export default function Card() {
@@ -44,6 +44,3 @@ export default function Card() {
   );
 }
 
-Card.config = {
-  navigationBarTitleText: "Card 卡片"
-};

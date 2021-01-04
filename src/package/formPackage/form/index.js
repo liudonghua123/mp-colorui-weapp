@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React, { Component } from 'react'
 import {
   ClLayout,
   ClForm,
@@ -11,10 +11,7 @@ import {
   ClCheckbox
 } from "mp-colorui";
 
-export default class Cl_Form extends Taro.Component {
-  static config = {
-    navigationBarTitleText: "Form 表单"
-  };
+export default class Cl_Form extends Component {
   ref = null;
   refFunc = node => {
     this.ref = node;

@@ -1,11 +1,7 @@
-import Taro from "@tarojs/taro";
+import React, { Component } from 'react'
 import { ClCard, ClAccordion, ClLayout, ClText, ClTitleBar } from "mp-colorui";
 
-export default class Accordion extends Taro.Component {
-  static config = {
-    navigationBarTitleText: "Accordion 手风琴"
-  };
-
+export default class Accordion extends Component {
   renderContent(card, animation, speed = 0.15, height = 0) {
     return (
       <ClLayout margin="normal" marginDirection="vertical">

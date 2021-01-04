@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { ClCard, ClLayout, ClTabBar, ClTitleBar } from "mp-colorui";
 
 const tabs = [
@@ -118,6 +118,3 @@ export default function TabBar() {
   );
 }
 
-TabBar.config = {
-  navigationBarTitleText: "TabBar 标签栏"
-};

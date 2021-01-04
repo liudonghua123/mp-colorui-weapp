@@ -1,4 +1,5 @@
-import Taro, { useState } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { useState } from "react";
 import { Image, View } from "@tarojs/components";
 import { ClButton, ClTitleBar, ClCard, ClFlex, ClCurtain } from "mp-colorui";
 
@@ -117,6 +118,3 @@ export default function Curtain() {
   );
 }
 
-Curtain.config = {
-  navigationBarTitleText: "Curtain 幕帘"
-};

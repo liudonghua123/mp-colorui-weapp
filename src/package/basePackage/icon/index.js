@@ -1,4 +1,5 @@
-import Taro, { pxTransform, useEffect, useState } from "@tarojs/taro";
+import { pxTransform } from "@tarojs/taro";
+import React, { useEffect, useState } from "react";
 import { View } from "@tarojs/components";
 import {
   ClIcon,
@@ -63,6 +64,3 @@ export default function Icon() {
   );
 }
 
-Icon.config = {
-  navigationBarTitleText: "Icon 图标"
-};

@@ -1,10 +1,8 @@
 import Taro from "@tarojs/taro";
+import React, { Component } from 'react'
 import { ClCard, ClLayout, ClTitleBar } from "mp-colorui";
 
-export default class TitleBar extends Taro.Component {
-  config = {
-    navigationBarTitleText: "TitleBar 购物栏"
-  };
+export default class TitleBar extends Component {
   render() {
     return (
       <ClLayout>

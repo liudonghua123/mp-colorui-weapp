@@ -1,4 +1,5 @@
-import Taro, { useState } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { useState } from "react";
 import { View } from "@tarojs/components";
 import {
   ClButton,
@@ -14,9 +15,6 @@ import colors from "../../../constant/color";
 import { convertLightColor } from "../../../util";
 
 export default function ButtonView() {
-  this.config = {
-    navigationBarTitleText: "Button 按钮"
-  };
   const [showLines, setShowLines] = useState(false);
   const renderRight = (
     <ClFlex align="center" justify="center">

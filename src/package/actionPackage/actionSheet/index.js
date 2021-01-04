@@ -1,4 +1,5 @@
-import Taro, { useState } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { useState } from "react";
 import { View } from "@tarojs/components";
 import {
   ClButton,
@@ -148,6 +149,4 @@ export default function ActionSheet() {
     </View>
   );
 }
-ActionSheet.config = {
-  navigationBarTitleText: "ActionSheet 动作面板"
-};
+

@@ -1,10 +1,8 @@
 import Taro from "@tarojs/taro";
+import React, { Component } from 'react'
 import { ClLayout, ClTimeline, ClTitleBar } from "mp-colorui";
 
-export default class Timeline extends Taro.Component {
-  config = {
-    navigationBarTitleText: "Timeline 时间轴"
-  };
+export default class Timeline extends Component {
 
   render() {
     return (

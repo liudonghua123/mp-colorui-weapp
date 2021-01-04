@@ -1,4 +1,5 @@
-import Taro, { pxTransform, useState } from "@tarojs/taro";
+import { pxTransform } from "@tarojs/taro";
+import React, { useState } from "react";
 import { ClButton, ClCard, ClDrawer, ClLayout, ClTitleBar } from "mp-colorui";
 import { View } from "@tarojs/components";
 
@@ -80,7 +81,3 @@ export default function Drawer() {
     </ClLayout>
   );
 }
-
-Drawer.config = {
-  navigationBarTitleText: "Drawer 抽屉"
-};

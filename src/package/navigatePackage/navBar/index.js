@@ -1,4 +1,5 @@
 import Taro from "@tarojs/taro";
+import React from "react";
 import { ClCard, ClLayout, ClNavBar, ClTitleBar } from "mp-colorui";
 
 const leftIcon = [
@@ -64,6 +65,3 @@ export default function NavBar() {
   );
 }
 
-NavBar.config = {
-  navigationBarTitleText: "NavBar 导航栏"
-};

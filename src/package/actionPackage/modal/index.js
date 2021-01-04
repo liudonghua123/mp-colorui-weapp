@@ -1,4 +1,5 @@
-import Taro, { useState } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { useState } from "react";
 import {
   ClButton,
   ClCard,
@@ -10,7 +11,7 @@ import {
   ClTimeline
 } from "mp-colorui";
 import { View } from "@tarojs/components";
-import "mp-colorui/src/style/category/layout.scss";
+import "mp-colorui/dist/style/category/layout.scss";
 
 export default function Modal() {
   const [normal, setNormal] = useState(false);
@@ -141,6 +142,3 @@ export default function Modal() {
   );
 }
 
-Modal.config = {
-  navigationBarTitleText: "Modal 模态框"
-};

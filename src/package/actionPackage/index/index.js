@@ -1,4 +1,5 @@
 import Taro from "@tarojs/taro";
+import React from "react";
 import { View } from "@tarojs/components";
 import { ClLayout, ClTitleBar } from "mp-colorui";
 import MenuNavigate from "../../../components/menuNavigate";
@@ -20,6 +21,4 @@ export default function Action() {
   );
 }
 
-Action.config = {
-  navigationBarTitleText: "操作反馈"
-};
+

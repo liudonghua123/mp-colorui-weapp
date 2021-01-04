@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { ClCard, ClLayout, ClSwitch, ClTitleBar } from "mp-colorui";
 
 export default function Switch() {
@@ -40,7 +40,3 @@ export default function Switch() {
     </ClLayout>
   );
 }
-
-Switch.config = {
-  navigationBarTitleText: "Switch 开关"
-};

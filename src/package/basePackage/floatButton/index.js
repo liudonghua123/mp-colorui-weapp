@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { ClCard, ClFloatButton, ClText } from "mp-colorui";
 import { View } from "@tarojs/components";
 
@@ -28,7 +28,3 @@ export default function FloatButton() {
     </View>
   );
 }
-
-FloatButton.config = {
-  navigationBarTitleText: "FloatButton 浮动按钮"
-};

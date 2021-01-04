@@ -1,4 +1,5 @@
-import Taro, { useState } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { useState } from "react";
 import { ClCard, ClLayout, ClLoading, ClSwitch, ClTitleBar } from "mp-colorui";
 
 export default function Loading() {
@@ -126,7 +127,3 @@ export default function Loading() {
     </ClLayout>
   );
 }
-
-Loading.config = {
-  navigationBarTitleText: "Loading 加载"
-};

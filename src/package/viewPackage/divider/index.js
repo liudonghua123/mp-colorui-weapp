@@ -1,4 +1,5 @@
 import Taro from "@tarojs/taro";
+import React from "react";
 import { ClDivider, ClLayout, ClTitleBar } from "mp-colorui";
 import { View } from "@tarojs/components";
 
@@ -19,6 +20,3 @@ export default function Divider() {
   );
 }
 
-Divider.config = {
-  navigationBarTitleText: "Divider 分割线"
-};

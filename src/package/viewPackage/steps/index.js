@@ -1,4 +1,5 @@
-import Taro, { useState } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { useState } from "react";
 import { ClButton, ClCard, ClLayout, ClStep, ClTitleBar } from "mp-colorui";
 
 const steps = [
@@ -139,6 +140,3 @@ export default function Steps() {
   );
 }
 
-Steps.config = {
-  navigationBarTitleText: "Steps 步骤条"
-};

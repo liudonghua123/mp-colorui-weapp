@@ -1,4 +1,4 @@
-import Taro, { useState } from "@tarojs/taro";
+import React from "react";
 import { ClVerticalTab, ClVerticalTabCell } from "mp-colorui";
 import { View } from "@tarojs/components";
 
@@ -22,6 +22,3 @@ export default function VerticalTab() {
   );
 }
 
-VerticalTab.config = {
-  navigationBarTitleText: "垂直导航 VerticalTab"
-};

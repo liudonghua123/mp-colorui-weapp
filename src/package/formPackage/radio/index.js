@@ -1,4 +1,4 @@
-import Taro, { useState } from "@tarojs/taro";
+import React, { useState } from "react";
 import { ClCard, ClLayout, ClRadio, ClTitleBar } from "mp-colorui";
 
 const radioGroup = [
@@ -115,7 +115,3 @@ export default function Radio() {
     </ClLayout>
   );
 }
-
-Radio.config = {
-  navigationBarTitleText: "Radio 单选按钮"
-};

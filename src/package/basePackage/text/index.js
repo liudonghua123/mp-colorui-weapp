@@ -1,4 +1,5 @@
-import Taro, { pxTransform } from "@tarojs/taro";
+import { pxTransform } from "@tarojs/taro";
+import React, { Component } from 'react'
 import { ClTitleBar, ClText, ClLayout, ClFlex, ClCard } from "mp-colorui";
 import { View } from "@tarojs/components";
 
@@ -16,7 +17,7 @@ const sizeTip = [
   "用于特大提示"
 ];
 
-export default class TextView extends Taro.Component {
+export default class TextView extends Component {
   render() {
     const sizeComponent = size.fontSize.map((item, index) => (
       <View key={item}>
@@ -132,6 +133,4 @@ export default class TextView extends Taro.Component {
     );
   }
 }
-TextView.config = {
-  navigationBarTitleText: "Text 文字"
-};
+

@@ -1,7 +1,7 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { ClCard, ClLayout, ClTitleBar } from "mp-colorui";
 import { View } from "@tarojs/components";
-import "mp-colorui/src/style/category/bgColor.scss";
+import "mp-colorui/dist/style/category/bgColor.scss";
 
 export default function Layout() {
   return (
@@ -49,6 +49,3 @@ export default function Layout() {
   );
 }
 
-Layout.config = {
-  navigationBarTitleText: "Layout 基本布局"
-};

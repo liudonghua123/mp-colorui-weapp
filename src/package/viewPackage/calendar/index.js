@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { View } from "@tarojs/components";
 import { ClCalendar, ClTitleBar } from "mp-colorui";
 import dayjs from "dayjs";
@@ -79,6 +79,3 @@ export default function Calendar() {
   );
 }
 
-Calendar.config = {
-  navigationBarTitleText: "Calendar 日历"
-};

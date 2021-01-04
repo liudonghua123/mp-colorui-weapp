@@ -1,5 +1,6 @@
 import { View } from "@tarojs/components";
-import Taro, { useState, useEffect } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { Component, useEffect, useState } from "react";
 import {
   ClAnimation,
   ClCard,
@@ -164,41 +165,41 @@ export default function Index() {
               setTempfilter(
                 value !== ""
                   ? allList
-                      .filter(item =>
-                        item.name
-                          .toLowerCase()
-                          .includes(value.toLocaleLowerCase())
-                      )
-                      .map(item => {
-                        let packageName = "";
-                        if (basePackage.includes(item.key)) {
-                          packageName = "basePackage";
-                        } else if (actionPackage.includes(item.key)) {
-                          packageName = "actionPackage";
-                        } else if (formPackage.includes(item.key)) {
-                          packageName = "formPackage";
-                        } else if (layoutPackage.includes(item.key)) {
-                          packageName = "layoutPackage";
-                        } else if (navigatePackage.includes(item.key)) {
-                          packageName = "navigatePackage";
-                        } else if (viewPackage.includes(item.key)) {
-                          packageName = "viewPackage";
-                        }
-                        return {
-                          arrow: true,
-                          title: item.name,
-                          key: item.key,
-                          url: `/package/${packageName}/${item.key}/index`
-                        };
-                      })
+                    .filter(item =>
+                      item.name
+                        .toLowerCase()
+                        .includes(value.toLocaleLowerCase())
+                    )
+                    .map(item => {
+                      let packageName = "";
+                      if (basePackage.includes(item.key)) {
+                        packageName = "basePackage";
+                      } else if (actionPackage.includes(item.key)) {
+                        packageName = "actionPackage";
+                      } else if (formPackage.includes(item.key)) {
+                        packageName = "formPackage";
+                      } else if (layoutPackage.includes(item.key)) {
+                        packageName = "layoutPackage";
+                      } else if (navigatePackage.includes(item.key)) {
+                        packageName = "navigatePackage";
+                      } else if (viewPackage.includes(item.key)) {
+                        packageName = "viewPackage";
+                      }
+                      return {
+                        arrow: true,
+                        title: item.name,
+                        key: item.key,
+                        url: `/package/${packageName}/${item.key}/index`
+                      };
+                    })
                   : []
               );
             }}
           />
         </ClLayout>
       ) : (
-        ""
-      )}
+          ""
+        )}
       {active === 0 ? (
         <ClLayout
           padding="xlarge"
@@ -209,8 +210,8 @@ export default function Index() {
           {show ? cardsComponent : ""}
         </ClLayout>
       ) : (
-        ""
-      )}
+          ""
+        )}
       {active === 1 ? <UserCenter /> : ""}
       <ClTabBar
         tabs={tabs}
@@ -251,7 +252,3 @@ export default function Index() {
     </View>
   );
 }
-
-Index.config = {
-  navigationBarTitleText: "MP-ColorUI"
-};

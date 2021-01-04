@@ -1,4 +1,5 @@
 import Taro from "@tarojs/taro";
+import React, { Component } from 'react'
 import { ClCard, ClFlex, ClLayout, ClTag, ClTitleBar } from "mp-colorui";
 
 const tags = [
@@ -17,10 +18,7 @@ const tags = [
   }
 ];
 
-export default class Tag extends Taro.Component {
-  config = {
-    navigationBarTitleText: "Tag 标签"
-  };
+export default class Tag extends Component {
 
   render() {
     return (

@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { ClCard, ClLayout, ClTabs, ClTitleBar } from "mp-colorui";
 import { View } from "@tarojs/components";
 
@@ -154,6 +154,3 @@ export default function Tabs() {
   );
 }
 
-Tabs.config = {
-  navigationBarTitleText: "Tabs 标签页"
-};
